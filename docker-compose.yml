@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  notification-service:
+    image: notification-service:latest
+    build:
+      context: ./FileUploadTracking.NotificationService
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - RabbitMQ__HostName=rabbitmq
+    depends_on:
+      - rabbitmq
+
+  upload-process-service:
+    image: upload-process-service:latest
+    build:
+      context: ./FileUploadTracking.UploadService
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - RabbitMQ__HostName=rabbitmq
+    depends_on:
+      - rabbitmq
+
+
+

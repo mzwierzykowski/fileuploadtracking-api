@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUploadTracking.UploadService", "FileUploadTracking.UploadService\FileUploadTracking.UploadService.csproj", "{2289108C-9DB0-423A-A9DA-82855DE32AB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUploadTracking.NotificationService", "FileUploadTracking.NotificationService\FileUploadTracking.NotificationService.csproj", "{ED462FC4-5D4C-4D10-9F3D-2894DACFA0A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2289108C-9DB0-423A-A9DA-82855DE32AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2289108C-9DB0-423A-A9DA-82855DE32AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2289108C-9DB0-423A-A9DA-82855DE32AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2289108C-9DB0-423A-A9DA-82855DE32AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED462FC4-5D4C-4D10-9F3D-2894DACFA0A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED462FC4-5D4C-4D10-9F3D-2894DACFA0A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED462FC4-5D4C-4D10-9F3D-2894DACFA0A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED462FC4-5D4C-4D10-9F3D-2894DACFA0A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B167D77-C448-4611-950B-585C7E498BF0}
+	EndGlobalSection
+EndGlobal
